@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton_library_menu"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:onClick="showMenu"
+        android:scaleType="centerInside"
+        android:src="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_library_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_library_header" />
+
+    <TextView
+        android:id="@+id/textView_library_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.05"
+        android:text="Library"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_library_search"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_library_menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_library_search"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="openSearch"
+        android:scaleType="centerInside"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_library_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_library_header" />
+
+</android.support.constraint.ConstraintLayout>

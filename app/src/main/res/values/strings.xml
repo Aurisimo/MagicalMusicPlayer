@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Magical Music Player</string>
+    <string name="main_header">Playlists</string>
+    <string name="playlist_header">Playlist</string>
 </resources>

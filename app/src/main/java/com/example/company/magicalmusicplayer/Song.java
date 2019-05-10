@@ -1,6 +1,8 @@
 package com.example.company.magicalmusicplayer;
 
-public class Song {
+import java.io.Serializable;
+
+public class Song implements Serializable {
     private String artist;
     private String title;
     private String album;

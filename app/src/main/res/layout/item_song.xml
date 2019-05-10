@@ -4,50 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_small"
     tools:background="@color/dark_two">
 
     <com.example.company.magicalmusicplayer.SongImageView
         android:id="@+id/songImageView_songitem_image"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="@dimen/size_songitem_image"
+        android:layout_height="@dimen/size_songitem_image"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/playlist_song_mask" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_songitem_title"
-        android:layout_width="315dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:textColor="@color/white"
-        android:textSize="14sp"
+        style="@style/DescriptionSmallWhite"
+        android:layout_width="@dimen/width_all_small"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/songImageView_songitem_image"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla" />
-c
 
     <TextView
         android:id="@+id/textView_songitem_artist"
+        style="@style/DescriptionExtraSmallGrey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif"
-        android:lineSpacingExtra="6sp"
-        android:textColor="#8bffffff"
-        android:textSize="10sp"
-        android:textStyle="normal"
+        android:layout_marginStart="@dimen/margin_all_medium"
+        android:layout_marginEnd="@dimen/margin_all_medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

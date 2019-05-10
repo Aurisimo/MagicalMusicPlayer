@@ -4,32 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_small"
     tools:background="@color/dark_two">
 
     <com.example.company.magicalmusicplayer.PlaylistImageView
         android:id="@+id/playlistImageView_playlistitem_image"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="@dimen/size_playlistitem_image"
+        android:layout_height="@dimen/size_playlistitem_image"
+        android:layout_marginTop="@dimen/margin_all_small"
+        android:layout_marginBottom="@dimen/margin_all_small"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/coldplay_parachutes" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_songitem_title"
-        android:layout_width="0dp"
+        style="@style/DescriptionMediumWhite"
+        android:layout_width="@dimen/width_all_small"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/margin_all_medium"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/playlistImageView_playlistitem_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/playlistImageView_playlistitem_image"
         app:layout_constraintTop_toTopOf="@+id/playlistImageView_playlistitem_image"
-        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla nibh sed elementum lobortis. Aliquam erat volutpat. Donec sed vestibulum mi. Proin quis leo porta, dignissim ante eu, porttitor dolor." />
+        app:layout_constraintVertical_bias="0.511"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla nibh sed elementum lobortis. Aliquam erat volutpat" />
 </android.support.constraint.ConstraintLayout>

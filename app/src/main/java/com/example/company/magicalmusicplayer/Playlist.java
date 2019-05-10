@@ -1,9 +1,10 @@
 package com.example.company.magicalmusicplayer;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Playlist {
+public class Playlist implements Serializable {
     private String title;
     private Integer imageResid;
     private List<Song> songs;

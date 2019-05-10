@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_all_small">8dp</dimen>
+    <dimen name="margin_all_large">32dp</dimen>
+    <dimen name="width_all_small">0dp</dimen>
+    <dimen name="height_all_small">0dp</dimen>
+    <dimen name="size_playlist_image">168dp</dimen>
+    <dimen name="size_playlist_back">48dp</dimen>
+    <dimen name="margin_playlist_play">128dp</dimen>
+    <dimen name="size_playlistitem_image">96dp</dimen>
+    <dimen name="margin_songitem_title">24dp</dimen>
+    <dimen name="size_songitem_image">48dp</dimen>
+    <dimen name="margin_all_medium">16dp</dimen>
+</resources>

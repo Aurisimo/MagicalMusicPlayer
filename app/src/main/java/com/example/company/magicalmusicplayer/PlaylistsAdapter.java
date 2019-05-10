@@ -51,12 +51,12 @@ public class PlaylistsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         titleTextView.setText(playlist.getTitle());
 
         final int playlistLocation = i;
+        final Playlist playlistToPass = playlist;
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), ("Pressed playlist: " + playlistLocation), Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(v.getContext(), PlaylistActivity.class);
+                intent.putExtra(Constants.EXTRA_NAME_PLAYLIST, playlistToPass);
                 v.getContext().startActivity(intent);
             }
         });

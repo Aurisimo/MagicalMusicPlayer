@@ -50,7 +50,6 @@ public class PlaylistsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         TextView titleTextView = viewHolder.itemView.findViewById(R.id.textView_songitem_title);
         titleTextView.setText(playlist.getTitle());
 
-        final int playlistLocation = i;
         final Playlist playlistToPass = playlist;
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
